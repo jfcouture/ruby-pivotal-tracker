@@ -124,7 +124,7 @@ module Pivotal
       { :id     => doc.at('id').innerHTML.to_i,
         :text   => doc.at('text').innerHTML,
         :author => doc.at('author').innerHTML,
-        :date   => doc.at('date').innerHTML    }
+        :date   => doc.at('noted_at').innerHTML    }
     end
   
   private
