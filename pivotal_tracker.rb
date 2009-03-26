@@ -10,7 +10,7 @@ require 'cgi'
 module Pivotal
   class Tracker
   
-    def initialize(project_id = '123', token = '45a6a078f67d9210d2fba91f8c484e7b', ssl=true)
+    def initialize(project_id, token, ssl=true)
       @project_id, @token, @ssl = project_id, token, ssl
       protocol = @ssl ? 'https' : 'http'
       port     = @ssl ? '443'   : '80'
